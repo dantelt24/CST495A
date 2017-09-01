@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAFA24A61F59BC25006E58A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA24A51F59BC25006E58A1 /* AppDelegate.swift */; };
+		FAFA24A81F59BC25006E58A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA24A71F59BC25006E58A1 /* ViewController.swift */; };
+		FAFA24AB1F59BC25006E58A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFA24A91F59BC25006E58A1 /* Main.storyboard */; };
+		FAFA24AD1F59BC25006E58A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFA24AC1F59BC25006E58A1 /* Assets.xcassets */; };
+		FAFA24B01F59BC25006E58A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFA24AE1F59BC25006E58A1 /* LaunchScreen.storyboard */; };
+		FAFA24BB1F59BC25006E58A1 /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA24BA1F59BC25006E58A1 /* WorldTrotterTests.swift */; };
+		FAFA24C61F59BC25006E58A1 /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA24C51F59BC25006E58A1 /* WorldTrotterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAFA24B71F59BC25006E58A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAFA249A1F59BC25006E58A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAFA24A11F59BC25006E58A1;
+			remoteInfo = WorldTrotter;
+		};
+		FAFA24C21F59BC25006E58A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAFA249A1F59BC25006E58A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAFA24A11F59BC25006E58A1;
+			remoteInfo = WorldTrotter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAFA24A21F59BC25006E58A1 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFA24A51F59BC25006E58A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAFA24A71F59BC25006E58A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAFA24AA1F59BC25006E58A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAFA24AC1F59BC25006E58A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAFA24AF1F59BC25006E58A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAFA24B11F59BC25006E58A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFA24B61F59BC25006E58A1 /* WorldTrotterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTrotterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFA24BA1F59BC25006E58A1 /* WorldTrotterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterTests.swift; sourceTree = "<group>"; };
+		FAFA24BC1F59BC25006E58A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFA24C11F59BC25006E58A1 /* WorldTrotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTrotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFA24C51F59BC25006E58A1 /* WorldTrotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITests.swift; sourceTree = "<group>"; };
+		FAFA24C71F59BC25006E58A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAFA249F1F59BC25006E58A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFA24B31F59BC25006E58A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFA24BE1F59BC25006E58A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAFA24991F59BC25006E58A1 = {
+			isa = PBXGroup;
+			children = (
+				FAFA24A41F59BC25006E58A1 /* WorldTrotter */,
+				FAFA24B91F59BC25006E58A1 /* WorldTrotterTests */,
+				FAFA24C41F59BC25006E58A1 /* WorldTrotterUITests */,
+				FAFA24A31F59BC25006E58A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAFA24A31F59BC25006E58A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA24A21F59BC25006E58A1 /* WorldTrotter.app */,
+				FAFA24B61F59BC25006E58A1 /* WorldTrotterTests.xctest */,
+				FAFA24C11F59BC25006E58A1 /* WorldTrotterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAFA24A41F59BC25006E58A1 /* WorldTrotter */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA24A51F59BC25006E58A1 /* AppDelegate.swift */,
+				FAFA24A71F59BC25006E58A1 /* ViewController.swift */,
+				FAFA24A91F59BC25006E58A1 /* Main.storyboard */,
+				FAFA24AC1F59BC25006E58A1 /* Assets.xcassets */,
+				FAFA24AE1F59BC25006E58A1 /* LaunchScreen.storyboard */,
+				FAFA24B11F59BC25006E58A1 /* Info.plist */,
+			);
+			path = WorldTrotter;
+			sourceTree = "<group>";
+		};
+		FAFA24B91F59BC25006E58A1 /* WorldTrotterTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA24BA1F59BC25006E58A1 /* WorldTrotterTests.swift */,
+				FAFA24BC1F59BC25006E58A1 /* Info.plist */,
+			);
+			path = WorldTrotterTests;
+			sourceTree = "<group>";
+		};
+		FAFA24C41F59BC25006E58A1 /* WorldTrotterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA24C51F59BC25006E58A1 /* WorldTrotterUITests.swift */,
+				FAFA24C71F59BC25006E58A1 /* Info.plist */,
+			);
+			path = WorldTrotterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAFA24A11F59BC25006E58A1 /* WorldTrotter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFA24CA1F59BC25006E58A1 /* Build configuration list for PBXNativeTarget "WorldTrotter" */;
+			buildPhases = (
+				FAFA249E1F59BC25006E58A1 /* Sources */,
+				FAFA249F1F59BC25006E58A1 /* Frameworks */,
+				FAFA24A01F59BC25006E58A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorldTrotter;
+			productName = WorldTrotter;
+			productReference = FAFA24A21F59BC25006E58A1 /* WorldTrotter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAFA24B51F59BC25006E58A1 /* WorldTrotterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFA24CD1F59BC25006E58A1 /* Build configuration list for PBXNativeTarget "WorldTrotterTests" */;
+			buildPhases = (
+				FAFA24B21F59BC25006E58A1 /* Sources */,
+				FAFA24B31F59BC25006E58A1 /* Frameworks */,
+				FAFA24B41F59BC25006E58A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAFA24B81F59BC25006E58A1 /* PBXTargetDependency */,
+			);
+			name = WorldTrotterTests;
+			productName = WorldTrotterTests;
+			productReference = FAFA24B61F59BC25006E58A1 /* WorldTrotterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAFA24C01F59BC25006E58A1 /* WorldTrotterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFA24D01F59BC25006E58A1 /* Build configuration list for PBXNativeTarget "WorldTrotterUITests" */;
+			buildPhases = (
+				FAFA24BD1F59BC25006E58A1 /* Sources */,
+				FAFA24BE1F59BC25006E58A1 /* Frameworks */,
+				FAFA24BF1F59BC25006E58A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAFA24C31F59BC25006E58A1 /* PBXTargetDependency */,
+			);
+			name = WorldTrotterUITests;
+			productName = WorldTrotterUITests;
+			productReference = FAFA24C11F59BC25006E58A1 /* WorldTrotterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAFA249A1F59BC25006E58A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Dante  Lacey-Thompson";
+				TargetAttributes = {
+					FAFA24A11F59BC25006E58A1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					FAFA24B51F59BC25006E58A1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAFA24A11F59BC25006E58A1;
+					};
+					FAFA24C01F59BC25006E58A1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAFA24A11F59BC25006E58A1;
+					};
+				};
+			};
+			buildConfigurationList = FAFA249D1F59BC25006E58A1 /* Build configuration list for PBXProject "WorldTrotter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAFA24991F59BC25006E58A1;
+			productRefGroup = FAFA24A31F59BC25006E58A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAFA24A11F59BC25006E58A1 /* WorldTrotter */,
+				FAFA24B51F59BC25006E58A1 /* WorldTrotterTests */,
+				FAFA24C01F59BC25006E58A1 /* WorldTrotterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAFA24A01F59BC25006E58A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFA24B01F59BC25006E58A1 /* LaunchScreen.storyboard in Resources */,
+				FAFA24AD1F59BC25006E58A1 /* Assets.xcassets in Resources */,
+				FAFA24AB1F59BC25006E58A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFA24B41F59BC25006E58A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFA24BF1F59BC25006E58A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAFA249E1F59BC25006E58A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFA24A81F59BC25006E58A1 /* ViewController.swift in Sources */,
+				FAFA24A61F59BC25006E58A1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFA24B21F59BC25006E58A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFA24BB1F59BC25006E58A1 /* WorldTrotterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFA24BD1F59BC25006E58A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFA24C61F59BC25006E58A1 /* WorldTrotterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAFA24B81F59BC25006E58A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAFA24A11F59BC25006E58A1 /* WorldTrotter */;
+			targetProxy = FAFA24B71F59BC25006E58A1 /* PBXContainerItemProxy */;
+		};
+		FAFA24C31F59BC25006E58A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAFA24A11F59BC25006E58A1 /* WorldTrotter */;
+			targetProxy = FAFA24C21F59BC25006E58A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAFA24A91F59BC25006E58A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAFA24AA1F59BC25006E58A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAFA24AE1F59BC25006E58A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAFA24AF1F59BC25006E58A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAFA24C81F59BC25006E58A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAFA24C91F59BC25006E58A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAFA24CB1F59BC25006E58A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WorldTrotter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dantelaceythompson.WorldTrotter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FAFA24CC1F59BC25006E58A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WorldTrotter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dantelaceythompson.WorldTrotter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FAFA24CE1F59BC25006E58A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WorldTrotterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dantelaceythompson.WorldTrotterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldTrotter.app/WorldTrotter";
+			};
+			name = Debug;
+		};
+		FAFA24CF1F59BC25006E58A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WorldTrotterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dantelaceythompson.WorldTrotterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldTrotter.app/WorldTrotter";
+			};
+			name = Release;
+		};
+		FAFA24D11F59BC25006E58A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = WorldTrotterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dantelaceythompson.WorldTrotterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WorldTrotter;
+			};
+			name = Debug;
+		};
+		FAFA24D21F59BC25006E58A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = WorldTrotterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dantelaceythompson.WorldTrotterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WorldTrotter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAFA249D1F59BC25006E58A1 /* Build configuration list for PBXProject "WorldTrotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFA24C81F59BC25006E58A1 /* Debug */,
+				FAFA24C91F59BC25006E58A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFA24CA1F59BC25006E58A1 /* Build configuration list for PBXNativeTarget "WorldTrotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFA24CB1F59BC25006E58A1 /* Debug */,
+				FAFA24CC1F59BC25006E58A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAFA24CD1F59BC25006E58A1 /* Build configuration list for PBXNativeTarget "WorldTrotterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFA24CE1F59BC25006E58A1 /* Debug */,
+				FAFA24CF1F59BC25006E58A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAFA24D01F59BC25006E58A1 /* Build configuration list for PBXNativeTarget "WorldTrotterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFA24D11F59BC25006E58A1 /* Debug */,
+				FAFA24D21F59BC25006E58A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAFA249A1F59BC25006E58A1 /* Project object */;
+}
