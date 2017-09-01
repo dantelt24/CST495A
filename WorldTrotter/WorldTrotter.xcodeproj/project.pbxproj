@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		FAFA24A61F59BC25006E58A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA24A51F59BC25006E58A1 /* AppDelegate.swift */; };
-		FAFA24A81F59BC25006E58A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA24A71F59BC25006E58A1 /* ViewController.swift */; };
 		FAFA24AB1F59BC25006E58A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFA24A91F59BC25006E58A1 /* Main.storyboard */; };
 		FAFA24AD1F59BC25006E58A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFA24AC1F59BC25006E58A1 /* Assets.xcassets */; };
 		FAFA24B01F59BC25006E58A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFA24AE1F59BC25006E58A1 /* LaunchScreen.storyboard */; };
 		FAFA24BB1F59BC25006E58A1 /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA24BA1F59BC25006E58A1 /* WorldTrotterTests.swift */; };
 		FAFA24C61F59BC25006E58A1 /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA24C51F59BC25006E58A1 /* WorldTrotterUITests.swift */; };
+		FAFA24D41F59D769006E58A1 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA24D31F59D769006E58A1 /* ConversionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		FAFA24A21F59BC25006E58A1 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFA24A51F59BC25006E58A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAFA24A71F59BC25006E58A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAFA24AA1F59BC25006E58A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAFA24AC1F59BC25006E58A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAFA24AF1F59BC25006E58A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		FAFA24C11F59BC25006E58A1 /* WorldTrotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTrotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFA24C51F59BC25006E58A1 /* WorldTrotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITests.swift; sourceTree = "<group>"; };
 		FAFA24C71F59BC25006E58A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFA24D31F59D769006E58A1 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		FAFA24A41F59BC25006E58A1 /* WorldTrotter */ = {
 			isa = PBXGroup;
 			children = (
+				FAFA24D31F59D769006E58A1 /* ConversionViewController.swift */,
 				FAFA24A51F59BC25006E58A1 /* AppDelegate.swift */,
-				FAFA24A71F59BC25006E58A1 /* ViewController.swift */,
 				FAFA24A91F59BC25006E58A1 /* Main.storyboard */,
 				FAFA24AC1F59BC25006E58A1 /* Assets.xcassets */,
 				FAFA24AE1F59BC25006E58A1 /* LaunchScreen.storyboard */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAFA24A81F59BC25006E58A1 /* ViewController.swift in Sources */,
+				FAFA24D41F59D769006E58A1 /* ConversionViewController.swift in Sources */,
 				FAFA24A61F59BC25006E58A1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
