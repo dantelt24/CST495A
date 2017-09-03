@@ -17,6 +17,12 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("Conversion View Controller loaded its view.")
+        updateCelsiusLabel()
+    }
+    
     let numberFormatter: NumberFormatter = {
         let nf = NumberFormatter()
         nf.numberStyle = .decimal
