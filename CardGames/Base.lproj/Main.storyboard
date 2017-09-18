@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="35g-S1-tLn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CardGames" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +22,216 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gamelogo" translatesAutoresizingMaskIntoConstraints="NO" id="ajV-kS-yo9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KOa-01-T0O">
+                                <rect key="frame" x="16" y="20" width="343" height="598"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to BlackJack. Select the tab below to start the game. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69F-rT-r47">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="41"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92e-8h-6Gu">
+                                        <rect key="frame" x="0.0" y="41" width="343" height="557"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="92e-8h-6Gu" firstAttribute="top" secondItem="69F-rT-r47" secondAttribute="bottom" id="1eC-O8-bHC"/>
+                                    <constraint firstAttribute="trailing" secondItem="69F-rT-r47" secondAttribute="trailing" id="8ov-L4-biz"/>
+                                    <constraint firstItem="69F-rT-r47" firstAttribute="top" secondItem="KOa-01-T0O" secondAttribute="top" id="VWT-Th-WQb"/>
+                                    <constraint firstItem="69F-rT-r47" firstAttribute="leading" secondItem="KOa-01-T0O" secondAttribute="leading" id="tCm-Jo-coq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="KOa-01-T0O" secondAttribute="trailing" id="2jX-FG-3Xj"/>
+                            <constraint firstItem="ajV-kS-yo9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3If-Gi-COS"/>
+                            <constraint firstAttribute="trailing" secondItem="ajV-kS-yo9" secondAttribute="trailing" id="Bie-Gr-BOw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ajV-kS-yo9" secondAttribute="bottom" id="DZv-bR-288"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KOa-01-T0O" secondAttribute="bottom" id="IiX-sN-HZc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ajV-kS-yo9" secondAttribute="bottom" id="JqL-qe-E83"/>
+                            <constraint firstItem="KOa-01-T0O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="K5C-P1-fXc"/>
+                            <constraint firstItem="KOa-01-T0O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Pjg-cv-1g1"/>
+                            <constraint firstItem="ajV-kS-yo9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UXu-uG-qJp"/>
+                            <constraint firstAttribute="trailing" secondItem="ajV-kS-yo9" secondAttribute="trailing" id="WAz-bw-rA4"/>
+                            <constraint firstItem="ajV-kS-yo9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="chl-nl-eWK"/>
+                            <constraint firstItem="ajV-kS-yo9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="whi-Ds-Onj"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="Pbl-y5-Doj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="972" y="37.331334332833585"/>
+        </scene>
+        <!--Blackjack-->
+        <scene sceneID="IRG-Er-PUo">
+            <objects>
+                <viewController id="Qt8-r7-sWj" customClass="BlackjackViewController" customModule="CardGames" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I0i-ld-lEf"/>
+                        <viewControllerLayoutGuide type="bottom" id="tWE-P0-cOe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ejM-8G-A29">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PmV-Vu-4MV">
+                                <rect key="frame" x="16" y="20" width="343" height="598"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackjack" translatesAutoresizingMaskIntoConstraints="NO" id="cZf-Ts-JDu">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="213"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="213" id="Ebl-1o-jm0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="lq5-Yn-54k" userLabel="PlayerOptionsView">
+                                        <rect key="frame" x="0.0" y="213" width="343" height="108"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNm-Ap-Bae">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="108"/>
+                                                <state key="normal" title="Hit"/>
+                                                <connections>
+                                                    <action selector="getRandomCard:" destination="Qt8-r7-sWj" eventType="touchUpInside" id="SEk-qj-4Md"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xa-Ur-FNL">
+                                                <rect key="frame" x="131.5" y="0.0" width="41" height="108"/>
+                                                <state key="normal" title="Stand"/>
+                                                <connections>
+                                                    <action selector="getWinner:" destination="Qt8-r7-sWj" eventType="touchUpInside" id="5VW-HA-VTi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qa-Tq-K18">
+                                                <rect key="frame" x="274" y="0.0" width="69" height="108"/>
+                                                <state key="normal" title="Surrender"/>
+                                                <connections>
+                                                    <action selector="surrender:" destination="Qt8-r7-sWj" eventType="touchUpInside" id="HPj-IK-EwU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="5UI-tW-hPG" userLabel="Score View">
+                                        <rect key="frame" x="0.0" y="321" width="343" height="40"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kXd-TA-PTz" userLabel="PlayerScoreView">
+                                                <rect key="frame" x="0.0" y="0.0" width="98" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIZ-bX-Jqa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="98" height="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtP-3Y-mIe">
+                                                        <rect key="frame" x="0.0" y="20" width="98" height="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="vIZ-bX-Jqa" secondAttribute="bottom" constant="20" symbolic="YES" id="7Uj-Eh-YX9"/>
+                                                    <constraint firstItem="xtP-3Y-mIe" firstAttribute="top" secondItem="kXd-TA-PTz" secondAttribute="top" constant="20" symbolic="YES" id="Nry-6a-Hnq"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Qbh-tj-WJX" userLabel="DealerScoreView">
+                                                <rect key="frame" x="242.5" y="0.0" width="100.5" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dealer Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gi-Cl-KmT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXn-Ka-Kd0">
+                                                        <rect key="frame" x="0.0" y="20.5" width="100.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6Iv-Y8-nB7" userLabel="GameCards">
+                                        <rect key="frame" x="0.0" y="361" width="343" height="237"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardbackblue" translatesAutoresizingMaskIntoConstraints="NO" id="GyS-By-D7a">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="237"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="GyS-By-D7a" secondAttribute="height" multiplier="167:237" id="Zr5-Jq-FA6"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardbackblue" translatesAutoresizingMaskIntoConstraints="NO" id="quV-km-nz2">
+                                                <rect key="frame" x="177" y="0.0" width="166" height="237"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="quV-km-nz2" secondAttribute="height" multiplier="166:237" id="IjB-Dy-ot4"/>
+                                                    <constraint firstAttribute="width" constant="166" id="nfF-It-Z3W"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5UI-tW-hPG" firstAttribute="leading" secondItem="6Iv-Y8-nB7" secondAttribute="leading" id="c86-Sf-YGy"/>
+                                    <constraint firstItem="5UI-tW-hPG" firstAttribute="leading" secondItem="PmV-Vu-4MV" secondAttribute="leading" id="h5I-Hx-SVj"/>
+                                    <constraint firstAttribute="trailing" secondItem="5UI-tW-hPG" secondAttribute="trailing" id="jCI-Wm-E8F"/>
+                                    <constraint firstItem="lq5-Yn-54k" firstAttribute="leading" secondItem="5UI-tW-hPG" secondAttribute="leading" id="wno-40-tJx"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PmV-Vu-4MV" firstAttribute="bottom" secondItem="tWE-P0-cOe" secondAttribute="top" id="G81-K8-x9l"/>
+                            <constraint firstItem="PmV-Vu-4MV" firstAttribute="leading" secondItem="ejM-8G-A29" secondAttribute="leadingMargin" id="dXl-HU-Apo"/>
+                            <constraint firstItem="PmV-Vu-4MV" firstAttribute="top" secondItem="I0i-ld-lEf" secondAttribute="bottom" id="nTt-vR-ZmQ"/>
+                            <constraint firstItem="PmV-Vu-4MV" firstAttribute="trailing" secondItem="ejM-8G-A29" secondAttribute="trailingMargin" id="rJ1-Yf-AzR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Blackjack" id="dQz-mw-BqI"/>
+                    <connections>
+                        <outlet property="dealerCards" destination="quV-km-nz2" id="SO8-sS-Li7"/>
+                        <outlet property="dealerScoreLabel" destination="eXn-Ka-Kd0" id="x94-ZV-0G2"/>
+                        <outlet property="hitButton" destination="SNm-Ap-Bae" id="8kR-Lh-KD2"/>
+                        <outlet property="playerCards" destination="GyS-By-D7a" id="hLd-wc-Lih"/>
+                        <outlet property="playerScoreLabel" destination="xtP-3Y-mIe" id="puo-0d-FfV"/>
+                        <outlet property="stand2Button" destination="3xa-Ur-FNL" id="JsL-Mp-ALS"/>
+                        <outlet property="surrenderButton" destination="3qa-Tq-K18" id="4Y9-W1-9Al"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Fb-1m-owd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="36.431784107946029"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="VOk-AK-RIe">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="35g-S1-tLn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="UTy-ZA-DCW">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="cqV-cC-Fk4"/>
+                        <segue destination="Qt8-r7-sWj" kind="relationship" relationship="viewControllers" id="YCQ-6g-u8h"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGK-Nh-WAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="blackjack" width="615" height="381"/>
+        <image name="cardbackblue" width="343" height="488"/>
+        <image name="gamelogo" width="325" height="456"/>
+    </resources>
 </document>

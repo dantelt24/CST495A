@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA7FE4F21F6709DC00B528E9 /* cardpics in Resources */ = {isa = PBXBuildFile; fileRef = FA7FE4F11F6709DC00B528E9 /* cardpics */; };
+		FA93F0421F68B3E9005F9616 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93F0411F68B3E9005F9616 /* Deck.swift */; };
 		FAAF982F1F60824D000F29A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF982E1F60824D000F29A0 /* AppDelegate.swift */; };
 		FAAF98311F60824D000F29A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF98301F60824D000F29A0 /* ViewController.swift */; };
 		FAAF98341F60824D000F29A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAF98321F60824D000F29A0 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		FAAF98391F60824D000F29A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAF98371F60824D000F29A0 /* LaunchScreen.storyboard */; };
 		FAAF98441F60824D000F29A0 /* CardGamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF98431F60824D000F29A0 /* CardGamesTests.swift */; };
 		FAAF984F1F60824E000F29A0 /* CardGamesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF984E1F60824E000F29A0 /* CardGamesUITests.swift */; };
+		FAD69AC71F62F96600BBBA01 /* BlackjackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD69AC61F62F96600BBBA01 /* BlackjackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA7FE4F11F6709DC00B528E9 /* cardpics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = cardpics; path = ../../cardpics; sourceTree = "<group>"; };
+		FA93F0411F68B3E9005F9616 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		FAAF982B1F60824D000F29A0 /* CardGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAF982E1F60824D000F29A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAAF98301F60824D000F29A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		FAAF984A1F60824E000F29A0 /* CardGamesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardGamesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAF984E1F60824E000F29A0 /* CardGamesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGamesUITests.swift; sourceTree = "<group>"; };
 		FAAF98501F60824E000F29A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD69AC61F62F96600BBBA01 /* BlackjackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackjackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				FAAF982E1F60824D000F29A0 /* AppDelegate.swift */,
+				FAD69AC61F62F96600BBBA01 /* BlackjackViewController.swift */,
 				FAAF98301F60824D000F29A0 /* ViewController.swift */,
+				FA93F0411F68B3E9005F9616 /* Deck.swift */,
 				FAAF98321F60824D000F29A0 /* Main.storyboard */,
+				FA7FE4F11F6709DC00B528E9 /* cardpics */,
 				FAAF98351F60824D000F29A0 /* Assets.xcassets */,
 				FAAF98371F60824D000F29A0 /* LaunchScreen.storyboard */,
 				FAAF983A1F60824D000F29A0 /* Info.plist */,
@@ -187,6 +196,9 @@
 		FAAF98231F60824D000F29A0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Dante  Lacey-Thompson";
@@ -233,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAAF98391F60824D000F29A0 /* LaunchScreen.storyboard in Resources */,
+				FA7FE4F21F6709DC00B528E9 /* cardpics in Resources */,
 				FAAF98361F60824D000F29A0 /* Assets.xcassets in Resources */,
 				FAAF98341F60824D000F29A0 /* Main.storyboard in Resources */,
 			);
@@ -260,6 +273,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAAF98311F60824D000F29A0 /* ViewController.swift in Sources */,
+				FAD69AC71F62F96600BBBA01 /* BlackjackViewController.swift in Sources */,
+				FA93F0421F68B3E9005F9616 /* Deck.swift in Sources */,
 				FAAF982F1F60824D000F29A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +522,7 @@
 				FAAF98551F60824E000F29A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAAF98561F60824E000F29A0 /* Build configuration list for PBXNativeTarget "CardGamesTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +531,7 @@
 				FAAF98581F60824E000F29A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAAF98591F60824E000F29A0 /* Build configuration list for PBXNativeTarget "CardGamesUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +540,7 @@
 				FAAF985B1F60824E000F29A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
