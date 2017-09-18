@@ -1,0 +1,6 @@
+framework module ViewColorChanger {
+  umbrella header "ViewColorChanger-umbrella.h"
+
+  export *
+  module * { export * }
+}

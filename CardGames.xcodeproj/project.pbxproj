@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA084E371F702AA800297035 /* Pods_CardGames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA084E361F702AA800297035 /* Pods_CardGames.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FA084E391F702AAD00297035 /* ViewColorChanger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA084E381F702AAD00297035 /* ViewColorChanger.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FA351BB11F6FAC9800443703 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA351BB01F6FAC9800443703 /* InfoViewController.swift */; };
 		FA7FE4F21F6709DC00B528E9 /* cardpics in Resources */ = {isa = PBXBuildFile; fileRef = FA7FE4F11F6709DC00B528E9 /* cardpics */; };
 		FA93F0421F68B3E9005F9616 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93F0411F68B3E9005F9616 /* Deck.swift */; };
 		FAAF982F1F60824D000F29A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF982E1F60824D000F29A0 /* AppDelegate.swift */; };
@@ -37,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50D004B4A23A6E1D677840C5 /* Pods-CardGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardGames.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardGames/Pods-CardGames.debug.xcconfig"; sourceTree = "<group>"; };
+		6756A53046E2747928A8ECBD /* Pods-CardGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardGames.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardGames/Pods-CardGames.release.xcconfig"; sourceTree = "<group>"; };
+		FA084E361F702AA800297035 /* Pods_CardGames.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_CardGames.framework; path = "Pods/../build/Debug-iphoneos/Pods_CardGames.framework"; sourceTree = "<group>"; };
+		FA084E381F702AAD00297035 /* ViewColorChanger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ViewColorChanger.framework; path = "../../../Library/Developer/Xcode/DerivedData/CardGames-ffllisdpxvrkdndqbemczchwoyex/Build/Products/Debug-iphonesimulator/ViewColorChanger/ViewColorChanger.framework"; sourceTree = "<group>"; };
+		FA351BB01F6FAC9800443703 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		FA7FE4F11F6709DC00B528E9 /* cardpics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = cardpics; path = ../../cardpics; sourceTree = "<group>"; };
 		FA93F0411F68B3E9005F9616 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		FAAF982B1F60824D000F29A0 /* CardGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA084E391F702AAD00297035 /* ViewColorChanger.framework in Frameworks */,
+				FA084E371F702AA800297035 /* Pods_CardGames.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +90,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AA7182E179B8415D10F1830 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50D004B4A23A6E1D677840C5 /* Pods-CardGames.debug.xcconfig */,
+				6756A53046E2747928A8ECBD /* Pods-CardGames.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9748DDBB5F6CB09911066C5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA084E381F702AAD00297035 /* ViewColorChanger.framework */,
+				FA084E361F702AA800297035 /* Pods_CardGames.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAAF98221F60824D000F29A0 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +115,8 @@
 				FAAF98421F60824D000F29A0 /* CardGamesTests */,
 				FAAF984D1F60824E000F29A0 /* CardGamesUITests */,
 				FAAF982C1F60824D000F29A0 /* Products */,
+				9748DDBB5F6CB09911066C5E /* Frameworks */,
+				7AA7182E179B8415D10F1830 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +137,7 @@
 				FAD69AC61F62F96600BBBA01 /* BlackjackViewController.swift */,
 				FAAF98301F60824D000F29A0 /* ViewController.swift */,
 				FA93F0411F68B3E9005F9616 /* Deck.swift */,
+				FA351BB01F6FAC9800443703 /* InfoViewController.swift */,
 				FAAF98321F60824D000F29A0 /* Main.storyboard */,
 				FA7FE4F11F6709DC00B528E9 /* cardpics */,
 				FAAF98351F60824D000F29A0 /* Assets.xcassets */,
@@ -141,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAAF98531F60824E000F29A0 /* Build configuration list for PBXNativeTarget "CardGames" */;
 			buildPhases = (
+				4AC48A5FAC91660206DE47DA /* [CP] Check Pods Manifest.lock */,
 				FAAF98271F60824D000F29A0 /* Sources */,
 				FAAF98281F60824D000F29A0 /* Frameworks */,
 				FAAF98291F60824D000F29A0 /* Resources */,
+				46CD5DE258E97F8E84812308 /* [CP] Embed Pods Frameworks */,
+				88A25E6C97CA9AD259D1FDDA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +301,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46CD5DE258E97F8E84812308 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CardGames/Pods-CardGames-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ViewColorChanger/ViewColorChanger.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewColorChanger.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardGames/Pods-CardGames-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AC48A5FAC91660206DE47DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CardGames-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88A25E6C97CA9AD259D1FDDA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardGames/Pods-CardGames-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAAF98271F60824D000F29A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -276,6 +364,7 @@
 				FAD69AC71F62F96600BBBA01 /* BlackjackViewController.swift in Sources */,
 				FA93F0421F68B3E9005F9616 /* Deck.swift in Sources */,
 				FAAF982F1F60824D000F29A0 /* AppDelegate.swift in Sources */,
+				FA351BB11F6FAC9800443703 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,8 +516,16 @@
 		};
 		FAAF98541F60824E000F29A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50D004B4A23A6E1D677840C5 /* Pods-CardGames.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Release-iphoneos/ViewColorChanger",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ViewColorChanger",
+				);
 				INFOPLIST_FILE = CardGames/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dantelaceythompson.CardGames;
@@ -439,8 +536,16 @@
 		};
 		FAAF98551F60824E000F29A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6756A53046E2747928A8ECBD /* Pods-CardGames.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Release-iphoneos/ViewColorChanger",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ViewColorChanger",
+				);
 				INFOPLIST_FILE = CardGames/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dantelaceythompson.CardGames;
@@ -451,6 +556,7 @@
 		};
 		FAAF98571F60824E000F29A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50D004B4A23A6E1D677840C5 /* Pods-CardGames.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -465,6 +571,7 @@
 		};
 		FAAF98581F60824E000F29A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6756A53046E2747928A8ECBD /* Pods-CardGames.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
