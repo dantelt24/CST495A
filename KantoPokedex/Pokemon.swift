@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+
 class Pokemon {
     var name: String!
     var id: Int!
@@ -28,7 +29,7 @@ class Pokemon {
     init(name: String, id: Int) {
         self.name = name
         self.id = id
-        self.url = "http://pokeapi.co/api/v1/pokemon/\(self.id!)"
+        self.url = "https://pokeapi.co/api/v2/pokemon/\(self.id!)"
     }
     
     var pkname: String {
@@ -112,16 +113,84 @@ class Pokemon {
 //        Alamofire.request(self._pokemonURL, method: .get).validate().responseJSON { response in
 //        Alamofire.request(self.url, method: .get, Parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { response in
         print("In download function")
+//        Alamofire.request(self.url).responseString{ response in
+//            debugPrint(response)
+//            switch response.result{
+//            case.success(let value):
+//                print("success in request: \(response.result)")
+//                print("Values we got back are: \(value)")
+//            case.failure(let error):
+//                print(error)
+//            }
+//        }
         Alamofire.request(self.url).responseJSON{ response in
+//            debugPrint(response)
             switch response.result {
             case .success(let value):
+                var statDictionary = [String : String] ()
                 print(" success in request: \(response.result)")
                 print("Values we got back are: \(value)")
                 let json = JSON(value)
                 self.weight = json["weight"].stringValue
                 self.height = json["height"].stringValue
-                self.attack = json["attack"].stringValue
-                self.defense = json["defense"].stringValue
+                let jsonStats = json["stats"]
+                print("stat values are: \(jsonStats)")
+//                for(key, subJson) in json["stats"] {
+//                    if let statName = subJson["stat"]["name"].string{
+//                        print("statName: \(statName)")
+//                    }
+//                    if let statVal = subJson["stat"]["base_stat"].string{
+//                        print("statVal: \(statVal)")
+//                    }
+//                }
+                for (key, subJson) in json["stats"]{
+                    print("StatValues: \(subJson["base_stat"]) StatName: \(subJson["stat"]["name"])")
+                    statDictionary[subJson["stat"]["name"].stringValue] = subJson["base_stat"].stringValue
+                }
+                
+                for (statName, statVal) in statDictionary {
+                    print("\(statName): \(statVal)")
+                }
+                self.attack = statDictionary["attack"]
+                self.defense = statDictionary["defense"]
+                
+//                print("stat values are from object: \(statData)")
+//                print(self.defense)
+//                guard let statsNode = json["stats"].string as? [[String: Any]] else {return}
+//                for(index, statNode) in statsNode.enumerated(){
+//                    guard let statValue = statNode["base_stat"] as? Int else { continue }
+//                    switch index {
+//                    case 0:
+//                        print(statValue)
+//                    case 1:
+//                        print(statValue)
+//                    case 2:
+//                        print(statValue)
+//                    case 3:
+//                        print(statValue)
+//                    case 4:
+//                        print(statValue)
+//                    case 5:
+//                        print(statValue)
+//                    default:
+//                        break
+//                }
+//            }
+                
+//                guard let statsNode = json["stats"] as? [[String: Any]] else {return}
+                
+//                if (json["stats"]["base_stat"]["name"] == "attack"){
+//                    self.attack = json["stats"]["base_stat"].stringValue
+//                }
+//                if (json["stats"]["name"] == "defense"){
+//                    self.defense = json["stats"]["base_stat"].stringValue
+//                }
+//                print("Attack val: \(json["stats"]["attack"]["base_stat"].stringValue)")
+//                print("Defense val: \(json["stats"]["defense"]["base_stat"].stringValue)")
+//                self.attack = json["stats"]["attack"]["base_stat"].stringValue
+//                self.defense = json["stats"]["defense"]["base_stat"].stringValue
+//                self.attack = json["attack"].stringValue
+//                self.defense = json["defense"].stringValue
                 
                 print(self.weight, self.height, self.attack, self.defense)
                 
@@ -135,12 +204,14 @@ class Pokemon {
                 }
                 
                 var jsonTypes = json["types"]
+//                print(jsonTypes)
                 if jsonTypes.count > 0 {
-                    self.type = "\(jsonTypes[0]["name"].stringValue)"
+                    print("Type: \(jsonTypes[0]["type"]["name"].stringValue)")
+                    self.type = "\(jsonTypes[0]["type"]["name"].stringValue)"
                     
                     if jsonTypes.count > 1 {
                         for  i in 1..<jsonTypes.count {
-                            let typeName = jsonTypes[i]["name"].stringValue
+                            let typeName = jsonTypes[i]["type"]["name"].stringValue
                             self.type! += "/\(typeName)"
                         }
                     }
