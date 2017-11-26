@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ViewColorChanger
 
 class InfoViewController: UIViewController{
     @IBOutlet var infoLabel: UILabel!
