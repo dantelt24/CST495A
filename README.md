@@ -1,6 +1,6 @@
 # CST495A
-IOS Development Assignments
+IOS Demo3
 
 
 # Branch BreakDown
-Each of my branches will be broken down by the course schedule and titled by the topic for those weeks. For example all of my work from the readings from weeks 2-4 will be under the Branch iOS-The-Basics and updated to master. 
+Here is my program for Demo3 called ISS MapChecker. You are able to specify a default city in the settings of the application in order to have a city set as default. What you do with this application is either get the current location of the ISS (International Space Station) and have it appear on a map, Or you can enter a city and state in the form of (City,StateAbbreviation) in order to get the times in which the ISS will pass over the city.
